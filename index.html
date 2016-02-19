@@ -1,196 +1,650 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
+<html>
+<head>
+	<title>HOME</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="6cors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />	
+	<!--//theme-style-->
+	<!--fonts-->
+	<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+	</script>
+</head>
+<body>
+	<!--start-banner-->
+	<div class="header" id="home">
+		<div class="header-top">
+			<a href="index.html"><img src="images/logo-2.png" alt=""/></a>
+			<h2>WELCOME TO MY SITE</h2>
+			<h1>I create beautiful website</h1>
+			<div class="header-top-bottom">
+				<a href="#about" class="scroll"><img src="images/logo-3.png" alt=""/></a>
+			</div>
+		</div>
+		<div class="header-home">
+			<div class="fixed-header">
+				<div class="h_menu4"><!-- start h_menu4 -->
+					<div class="header-left">
+						<div class="header-left-logo">
+							<a href="index.html"><img src="images/logo-1.png" alt=""/></a>
+						</div>
+						<div class="header-left-text">
+							<a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt=""/></a>
+							<ul class="nav">
+								<li><a href="#about" class="scroll">ABOUT</a></li>
+								<li><a href="#services" class="scroll">SKILLS</a></li>
+								<li><a href="#work" class="scroll">PROJECTS</a></li>
+								<li><a href="#pricing" class="scroll">EXPERIENCE</a></li>
+								<li><a href="#blogs" class="scroll">DESIZE</a></li>
+								<li><a href="#contact" class="scroll">CONTANT</a></li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+						<script type="text/javascript" src="js/nav.js"></script>
+						<script type="text/javascript">
+						jQuery(document).ready(function($) {
+							$(".scroll").click(function(event){		
+								event.preventDefault();
+								$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+							});
+						});
+						</script>		
+						<!--script-->
+						<script>
+						$(document).ready(function(){
+							$(".nav li a").click(function(){
+								$(this).parent().addClass("active");
+								$(this).parent().siblings().removeClass("active");
+							});
+						});
+						</script>
+						<!--script-for-sticky-nav-->
+						<script>
+						$(document).ready(function() {
+							var navoffeset=$(".header-home").offset().top;
+							$(window).scroll(function(){
+								var scrollpos=$(window).scrollTop(); 
+								if(scrollpos >=navoffeset){
+									$(".header-home").addClass("fixed");
+								}else{
+									$(".header-home").removeClass("fixed");
+								}
+							});
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="index.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+						});
+						</script>
+						<!--/script-for-sticky-nav-->
+					</div>
+					<div class="header-right">
+						<ul>
+							<li><a href="#"><span class="fb"> </span></a></li>
+							<li><a href="#"><span class="twit"> </span></a></li>
+							<li><a href="#"><span class="drbl"> </span></a></li>
+							<li><a href="#"><span class="yt"> </span></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div><!-- end h_menu4 -->
+			</div>
+		</div>
+	</div>
+	<!--end-banner-->
 
-   <div class="container-fluid my-nav">
-     <div class="container">
-       <nav class="navbar navbar-inverse my-nav-h">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-      </nav>
-     </div>
-   </div>
 
-<div class="container">
-  <hr>
-  <div class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>
-<hr>
-  <div class="row">
-      <div class="col-xs-12 col-sm-4">
-        <div class="list-group">
-          <button type="button" class="list-group-item"><a href="/apple">apple</a></button>
-          <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-          <button type="button" class="list-group-item">Morbi leo risus</button>
-          <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-          <button type="button" class="list-group-item">Vestibulum at eros</button>
-      </div>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-           <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-           <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-           <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-           <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-           <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-           <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-           <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-           <div class="col-xs-12 col-sm-6 col-lg-4">
-            <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <hr>
-</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
-</html>
+
+
+
+
+	<!--start-about关于自己-->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="about-main">
+				<h3>ABOUT ME</h3>
+				<div class="about-top">
+					<div class="col-md-2 about-left">
+						<img src="./images/xueli.png" alt="">
+						<h4>Education Background</h4>
+						<h5>undergraduate course</h5>
+						<ul>
+							<li><a href="#"><span class="twit"> </span></a></li>
+							<li><a href="#"><span class="sap"> </span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 about-left">
+						<img src="./images/aihao.png" alt="">
+						<h4 style="margin-top:30px">Hobby</h4>
+						<h5 style="margin-top:27px"> cycle music travel</h5>
+						<ul>
+							<li><a href="#"><span class="drbl"> </span></a></li>
+							<li><a href="#"><span class="sap"> </span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 about-left">
+						<img src="./images/nianlin.png" alt="">
+						<h4 style="margin-top:30px">Age</h4>
+						<h5 style="margin-top:27px">25 years old</h5>
+						<ul>
+							<li><a href="#"><span class="fb"> </span></a></li>
+							<li><a href="#"><span class="sap"> </span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 about-left">
+						<img src="./images/dizhi.png" alt="">
+						<h4 style="margin-top:30px">Address</h4>
+						<h5 style="margin-top:27px">Beijing</h5>
+						<ul>
+							<li><a href="#"><span class="twit"> </span></a></li>
+							<li><a href="#"><span class="sap"> </span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 about-left">
+						<img src="./images/yixiang.png" alt="">
+						<h4 style="margin-top:30px">Objective</h4>
+						<h5 style="margin-top:27px">Front End Engineer</h5>
+						<ul>
+							<li><a href="#"><span class="drbl"> </span></a></li>
+							<li><a href="#"><span class="sap"> </span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 about-left">
+						<img src="./images/zhuantai.png" alt="">
+						<h4 style="margin-top:30px">State</h4>
+						<h5 style="margin-top:27px">unemployed</h5>
+						<ul>
+							<li><a href="#"><span class="fb"> </span></a></li>
+							<li><a href="#"><span class="sap"> </span></a></li>
+						</ul>
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-about-->
+
+	<!--start-what-skill-->
+	<div class="what" id="work">
+		<div class="container">
+			<div class="what-main">
+				<h3>What Can I Do?</h3>
+				<div class="col-md-3 ">
+					<div class="circle">
+						<div style="display:inline;width:226px;height:226px;"><canvas width="226" height="226"></canvas><input class="knob" data-angleoffset="0" value="82" data-fgcolor="#2a797b" data-bgcolor="#3a556e" data-width="226" data-height="226" data-thickness=".2" style="width: 117px; height: 75px; position: absolute; vertical-align: middle; margin-top: 75px; margin-left: -179px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 45px; line-height: normal; font-family: Arial; text-align: center; color: rgb(42, 121, 123); padding: 0px; -webkit-appearance: none; background: none;">
+							<p>%</p>
+						</div>
+					</div>
+					<div class="text-3"><a href="#">HTML5/CSS3</a></div>
+				</div>
+				<div class="col-md-3 ">
+					<div class="circle">
+						<div style="display:inline;width:226px;height:226px;"><canvas width="226" height="226"></canvas><input class="knob" data-angleoffset="0" value="82" data-fgcolor="#2a797b" data-bgcolor="#3a556e" data-width="226" data-height="226" data-thickness=".2" style="width: 117px; height: 75px; position: absolute; vertical-align: middle; margin-top: 75px; margin-left: -179px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 45px; line-height: normal; font-family: Arial; text-align: center; color: rgb(42, 121, 123); padding: 0px; -webkit-appearance: none; background: none;">
+							<p>%</p>
+						</div>
+					</div>
+					<div class="text-3"><a href="#">HTML5/CSS3</a></div>
+				</div>
+				<div class="col-md-3 ">
+					<div class="circle">
+						<div style="display:inline;width:226px;height:226px;"><canvas width="226" height="226"></canvas><input class="knob" data-angleoffset="0" value="90" data-fgcolor="#2a797b" data-bgcolor="#3a556e" data-width="226" data-height="226" data-thickness=".2" style="width: 117px; height: 75px; position: absolute; vertical-align: middle; margin-top: 75px; margin-left: -179px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 45px; line-height: normal; font-family: Arial; text-align: center; color: rgb(42, 121, 123); padding: 0px; -webkit-appearance: none; background: none;"><p>%</p></div>
+					</div>
+					<div class="text-3"><a href="#">Photography</a></div>
+				</div>
+				<div class="col-md-3 ">
+					<div class="circle">
+						<div style="display:inline;width:226px;height:226px;"><canvas width="226" height="226"></canvas><input class="knob" data-angleoffset="0" value="89" data-fgcolor="#2a797b" data-bgcolor="#3a556e" data-width="226" data-height="226" data-thickness=".2" style="width: 117px; height: 75px; position: absolute; vertical-align: middle; margin-top: 75px; margin-left: -179px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 45px; line-height: normal; font-family: Arial; text-align: center; color: rgb(42, 121, 123); padding: 0px; -webkit-appearance: none; background: none;"><p>%</p></div>
+					</div>
+					<div class="text-3"><a href="#">PHP/MYSQL</a></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-what-->
+	<!--start-project-->
+
+	<div class="price" id="pricing">
+		<div class="container">
+			<div class="price-main"style="padding-top:80px">
+				<h3>My Project</h3>
+				<div class="price-top">
+					<div class="project-box">
+						<div class="projects My-Project-1">
+							<div class="price-left-one" id="hexagon">
+								<div class="price-left-two">
+									<h5>TMALL</h5>
+								
+									<a href="#"class="project-src"></a>
+								</div>
+								<ul>
+									<li><a href="#">Html/Css</a></li>
+									<li><a href="#">JS</a></li>
+									<li><a href="#">Function.js</a></li>
+									<li><a href="#">Animate.js</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="projects My-Project-2">
+							<div class="price-left-middle" id="hexagon2">
+								<div class="price-left-top">
+									<h5>Apple</h5>
+									<a href="#"class="project-src"> </a>
+								</div>
+								<ul>
+									<li><a href="#">Html/css</a></li>
+									<li><a href="#">Js</a></li>
+									<li><a href="#">CSS3</a></li>
+									<li><a href="#">Bootstrap</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="projects My-Project-3">
+							<div class="price-left-middle" id="hexagon1">
+								<div class="price-left-two price-left-three">
+									<h5>MI</h5>
+									<a href="#"class="project-src"> </a>
+								</div>
+								<ul>
+									<li><a href="#">Html/Css</a></li>
+									<li><a href="#">JQuery</a></li><li><a href="#">Ajax</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="projects My-Project-4">
+							<div class="price-left-middle" id="hexagon1">
+								<div class="price-left-two price-left-three">
+									<h5>MI</h5>
+									<a href="#"class="project-src"> </a>
+								</div>
+								<ul>
+									<li><a href="#">Html/Css</a></li>
+									<li><a href="#">JQuery</a></li><li><a href="#">Ajax</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="projects My-Project-5">
+							<div class="price-left-middle" id="hexagon1">
+								<div class="price-left-two price-left-three">
+									<h5>MI</h5>
+									<a href="#"class=""> </a>
+								</div>
+								<ul>
+									<li><a href="#">Html/Css</a></li>
+									<li><a href="#">JQuery</a></li><li><a href="#">Ajax</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="projects My-Project-6">
+							<div class="price-left-middle" id="hexagon1">
+								<div class="price-left-two price-left-three">
+									<h5>MI</h5>
+									<a href="#"class=""> </a>
+								</div>
+								<ul>
+									<li><a href="#">Html/Css</a></li>
+									<li><a href="#">JQuery</a></li><li><a href="#">Ajax</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="projects My-Project-7">
+							<div class="price-left-middle" id="hexagon1">
+								<div class="price-left-two price-left-three">
+									<h5>MI</h5>
+									<a href="#"class=""> </a>
+								</div>
+								<ul>
+									<li><a href="#">Html/Css</a></li>
+									<li><a href="#">JQuery</a></li><li><a href="#">Ajax</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="projects My-Project-8">
+							<div class="price-left-middle" id="hexagon1">
+								<div class="price-left-two price-left-three">
+									<h5>MI</h5>
+									<a href="#"class=""> </a>
+								</div>
+								<ul>
+									<li><a href="#">Html/Css</a></li>
+									<li><a href="#">JQuery</a></li><li><a href="#">Ajax</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="projects My-Project-9">
+							<div class="price-left-middle" id="hexagon1">
+								<div class="price-left-two price-left-three">
+									<h5>MI</h5>
+									<a href="#"class=""> </a>
+								</div>
+								<ul>
+									<li><a href="#">Html/Css</a></li>
+									<li><a href="#">JQuery</a></li><li><a href="#">Ajax</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-project-->
+	<!--start-quality-->
+	<div class="quality"style="padding-top:900px;">
+		<div class="container">
+			<div class="quality-main">
+				<h3>..With Good Quality</h3>
+				<p>SEE OUR PROCESS</p>
+				<div class="quality-top">
+					<div class="quality-top-one">
+						<span> </span>
+						<div class="quality-bottom quality-bottom-rsh">
+							<label class="rsh"> </label>
+							<p>RESEARCH</p>
+						</div>
+					</div>
+					<div class="quality-top-one">
+						<span class="one"> </span>
+						<div class="quality-bottom quality-bottom-dsg">
+							<label class="dsg"> </label>
+							<p>DESIGN</p>
+						</div>
+					</div>
+					<div class="quality-top-one">
+						<span> </span>
+						<div class="quality-bottom quality-bottom-pro">
+							<label class="pro"> </label>
+							<p>PROTOTYPE</p>
+						</div>
+					</div>
+					<div class="quality-top-one">
+						<span class="one"> </span>
+						<div class="quality-bottom quality-bottom-imp">
+							<label class="imp"> </label>
+							<p>IMPLEMENT</p>
+						</div>
+					</div>
+					<div class="quality-top-one">
+						<span> </span>
+						<div class="quality-bottom quality-bottom-luh">
+							<label class="luh"> </label>
+							<p>LAUNCH</p>
+						</div>	
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-quality-->
+	<!--start-clients-->
+	<div class="clients">
+		<div class="container">
+			<div class="clients-mian">
+				<h3>Our Happy Clients</h3>
+				<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider4">
+						<li>
+							<div class="clients-top">
+								<div class="clients-left">
+									<img src="images/clients-1.png" alt=""/>
+									<img src="images/clients-1.png" alt=""/>
+								</div>
+								<div class="clients-left">
+									<img src="images/clients-2.png" alt=""/>
+									<img src="images/clients-2.png" alt=""/>
+								</div>
+								<div class="clients-left">
+									<img src="images/clients-3.png" alt=""/>
+									<img src="images/clients-3.png" alt=""/>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</li>
+						<li>
+							<div class="clients-top">
+								<div class="clients-left">
+									<img src="images/clients-2.png" alt=""/>
+									<img src="images/clients-2.png" alt=""/>
+								</div>
+								<div class="clients-left">
+									<img src="images/clients-3.png" alt=""/>
+									<img src="images/clients-3.png" alt=""/>
+								</div>
+								<div class="clients-left">
+									<img src="images/clients-1.png" alt=""/>
+									<img src="images/clients-1.png" alt=""/>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</li>
+						<li>
+							<div class="clients-top">
+								<div class="clients-left">
+									<img src="images/clients-3.png" alt=""/>
+									<img src="images/clients-3.png" alt=""/>
+								</div>
+								<div class="clients-left">
+									<img src="images/clients-1.png" alt=""/>
+									<img src="images/clients-1.png" alt=""/>
+								</div>
+								<div class="clients-left">
+									<img src="images/clients-2.png" alt=""/>
+									<img src="images/clients-2.png" alt=""/>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clients-bottom">
+				<p>AND THEY SAYS</p>
+				<div class="clients-bottom-top">
+					<div class="clients-btm">
+						<div  id="top" class="callbacks_container">
+							<ul class="rslides" id="slider5">
+								<li>
+									<div class="clients-btm-one">
+										<img src="images/clients-4.png" alt=""/>
+										<h4>ANNA DOE</h4>
+										<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+									</div>
+								</li>
+								<li>
+									<div class="clients-btm-one">
+										<img src="images/clients-5.png" alt=""/>
+										<h4>INGA NORTH</h4>
+										<P>Magna aliquadolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+									</div>
+								</li>
+								<li>
+									<div class="clients-btm-one">
+										<img src="images/clients-6.png" alt=""/>
+										<h4>JACOB PARKER</h4>
+										<P>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-clients-->
+	<!--Slider-Starts-Here-->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+			    // You can also use "$(window).load(function() {"
+			    	$(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			      	auto: true,
+			      	pager: true,
+			      	nav: true,
+			      	speed: 500,
+			      	namespace: "callbacks",
+			      	before: function () {
+			      		$('.events').append("<li>before event fired.</li>");
+			      	},
+			      	after: function () {
+			      		$('.events').append("<li>after event fired.</li>");
+			      	}
+			      });
+
+			  });
+			    	</script>
+			    	<script>
+			    // You can also use "$(window).load(function() {"
+			    	$(function () {
+			      // Slideshow 4
+			      $("#slider5").responsiveSlides({
+			      	auto: true,
+			      	pager: true,
+			      	nav: false,
+			      	speed: 500,
+			      	namespace: "callbacks",
+			      	before: function () {
+			      		$('.events').append("<li>before event fired.</li>");
+			      	},
+			      	after: function () {
+			      		$('.events').append("<li>after event fired.</li>");
+			      	}
+			      });
+
+			  });
+			    	</script>
+			    	<!--End-slider-script-->
+			    	<!--start-blog-->
+			    	<div class="blog" id="blogs">
+			    		<div class="container">
+			    			<div class="blog-main">
+			    				<h3>Our Blogs</h3>
+			    				<div class="blog-top">
+			    					<div class="col-md-4 blog-left">
+			    						<img src="images/blog-1.png" alt="">
+			    						<span> </span>
+			    						<h4>WHAT TO WRITE?</h4>
+			    					</div>
+			    					<div class="col-md-4 blog-left">
+			    						<img src="images/blog-2.png" alt="">
+			    						<span> </span>
+			    						<h4>WHAT TO WRITE?</h4>
+			    					</div>
+			    					<div class="col-md-4 blog-left">
+			    						<img src="images/blog-3.png" alt="">
+			    						<span> </span>
+			    						<h4>WHAT TO WRITE?</h4>
+			    					</div>
+			    					<div class="clearfix"></div>
+			    				</div>
+			    				<div class="b-btn">
+			    					<a href="#">Read More!</a>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<!--end-blog-->
+			    	<!--start-contact-->
+			    	<div class="touch" id="contact">
+			    		<div class="container">
+			    			<div class="touch-main">
+			    				<h3>Get In Touch</h3>
+			    				<div class="touch-top">
+			    					<div class="col-md-6 touch-left">
+			    						<p>DROP US A LINE</p>
+			    						<form>
+			    							<input type="text" class="active" placeholder="Name" required="">
+			    							<input type="text" placeholder="Email" required="">
+			    							<input type="text" placeholder="Subject" required="">
+			    							<textarea placeholder="Message" required=""></textarea>
+			    							<div class="sub-button">
+			    								<input type="submit" value="SEND IT">
+			    							</div>
+			    						</form>	
+			    					</div>
+			    					<div class="col-md-6 touch-right">
+			    						<div class="touch-right-bottom">
+			    							<div class="touch-right-top">
+			    								<span class="add"> </span>
+			    								<h4>123 MAIN STREET,<label>CITY, COUNTRY</label></h4>
+			    							</div>
+			    							<div class="touch-right-top">
+			    								<span class="mail"> </span>
+			    								<p><a href="emainto:example@email.com">EMAIL@DOMAIN.COM</a></p>
+			    							</div>
+			    							<div class="touch-right-top">
+			    								<span class="num"> </span>
+			    								<p>+0123 456 789</p>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<div class="clearfix"></div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<!--end-contact-->
+			    	<!--start-footer-->
+			    	<div class="footer">
+			    		<div class="container">
+			    			<div class="footer-text">
+			    				<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+			    			</div>
+			    		</div>
+			    		<script type="text/javascript">
+			    		$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+								 		*/
+
+								 		$().UItoTop({ easingType: 'easeOutQuart' });
+
+								 	});
+			    		</script>
+			    		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			    	</div>
+			    	<!--end-footer-->
+
+			    </body>
+			    </html>
