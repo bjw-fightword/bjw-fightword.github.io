@@ -10,8 +10,8 @@
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
 	<!--theme-style-->
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-	<link href="css/project.css" rel="stylesheet" type="text/css" media="all" />	
-	<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />	
+	<link href="css/project.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/skill-style.css" rel="stylesheet" type="text/css" media="all" />	
 	<!--//theme-style-->
 	<!--fonts-->
 	<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -42,12 +42,13 @@
 		</div>
 		<div class="header-home">
 			<div class="fixed-header">
-				<div class="h_menu4"><!-- start h_menu4 -->
-					<div class="header-left">
-						<div class="header-left-logo">
+				<div class="h_menu4">
+				<!-- start h_menu4 -->
+					<div class="header-left col-md-9">
+						<div class="header-left-logo ">
 							<a href="index.html"><img src="images/logo-1.png" alt=""/></a>
 						</div>
-						<div class="header-left-text">
+						<div class="header-left-text ">
 							<a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt=""/></a>
 							<ul class="nav">
 								<li><a href="#about" class="scroll">ABOUT</a></li>
@@ -94,7 +95,28 @@
 						</script>
 						<!--/script-for-sticky-nav-->
 					</div>
-					<div class="header-right">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="header-right col-md-3">
 						<ul>
 							<li><a href="#"><span class="fb"> </span></a></li>
 							<li><a href="#"><span class="twit"> </span></a></li>
@@ -114,16 +136,7 @@
 			<div class="about-main">
 				<h3>ABOUT ME</h3>
 				<div class="about-top">
-					<div class="col-md-2 about-left">
-						<img src="./images/xueli.png" alt="">
-						<h4>Education Background</h4>
-						<h5>undergraduate course</h5>
-						<ul>
-							<li><a href="#"><span class="twit"> </span></a></li>
-							<li><a href="#"><span class="sap"> </span></a></li>
-						</ul>
-					</div>
-					<div class="col-md-2 about-left">
+					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
 						<img src="./images/aihao.png" alt="">
 						<h4 style="margin-top:30px">Hobby</h4>
 						<h5 style="margin-top:27px"> cycle music travel</h5>
@@ -132,7 +145,7 @@
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
-					<div class="col-md-2 about-left">
+					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
 						<img src="./images/nianlin.png" alt="">
 						<h4 style="margin-top:30px">Age</h4>
 						<h5 style="margin-top:27px">25 years old</h5>
@@ -141,7 +154,7 @@
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
-					<div class="col-md-2 about-left">
+					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
 						<img src="./images/dizhi.png" alt="">
 						<h4 style="margin-top:30px">Address</h4>
 						<h5 style="margin-top:27px">Beijing</h5>
@@ -150,7 +163,7 @@
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
-					<div class="col-md-2 about-left">
+					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
 						<img src="./images/yixiang.png" alt="">
 						<h4 style="margin-top:30px">Objective</h4>
 						<h5 style="margin-top:27px">Front End Engineer</h5>
@@ -159,7 +172,7 @@
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
-					<div class="col-md-2 about-left">
+					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
 						<img src="./images/zhuantai.png" alt="">
 						<h4 style="margin-top:30px">State</h4>
 						<h5 style="margin-top:27px">unemployed</h5>
@@ -168,7 +181,15 @@
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
-
+					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
+						<img src="./images/xueli.png" alt="">
+						<h4>Education Background</h4>
+						<h5>undergraduate course</h5>
+						<ul>
+							<li><a href="#"><span class="twit"> </span></a></li>
+							<li><a href="#"><span class="sap"> </span></a></li>
+						</ul>
+					</div>
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -179,35 +200,254 @@
 	<div class="what" id="work">
 		<div class="container">
 			<div class="what-main">
-				<h3>What Can I Do?</h3>
-				<div class="col-md-3 ">
-					<div class="circle">
-						<div style="display:inline;width:226px;height:226px;"><canvas width="226" height="226"></canvas><input class="knob" data-angleoffset="0" value="82" data-fgcolor="#2a797b" data-bgcolor="#3a556e" data-width="226" data-height="226" data-thickness=".2" style="width: 117px; height: 75px; position: absolute; vertical-align: middle; margin-top: 75px; margin-left: -179px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 45px; line-height: normal; font-family: Arial; text-align: center; color: rgb(42, 121, 123); padding: 0px; -webkit-appearance: none; background: none;">
-							<p>%</p>
-						</div>
-					</div>
-					<div class="text-3"><a href="#">HTML5/CSS3</a></div>
-				</div>
-				<div class="col-md-3 ">
-					<div class="circle">
-						<div style="display:inline;width:226px;height:226px;"><canvas width="226" height="226"></canvas><input class="knob" data-angleoffset="0" value="82" data-fgcolor="#2a797b" data-bgcolor="#3a556e" data-width="226" data-height="226" data-thickness=".2" style="width: 117px; height: 75px; position: absolute; vertical-align: middle; margin-top: 75px; margin-left: -179px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 45px; line-height: normal; font-family: Arial; text-align: center; color: rgb(42, 121, 123); padding: 0px; -webkit-appearance: none; background: none;">
-							<p>%</p>
-						</div>
-					</div>
-					<div class="text-3"><a href="#">HTML5/CSS3</a></div>
-				</div>
-				<div class="col-md-3 ">
-					<div class="circle">
-						<div style="display:inline;width:226px;height:226px;"><canvas width="226" height="226"></canvas><input class="knob" data-angleoffset="0" value="90" data-fgcolor="#2a797b" data-bgcolor="#3a556e" data-width="226" data-height="226" data-thickness=".2" style="width: 117px; height: 75px; position: absolute; vertical-align: middle; margin-top: 75px; margin-left: -179px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 45px; line-height: normal; font-family: Arial; text-align: center; color: rgb(42, 121, 123); padding: 0px; -webkit-appearance: none; background: none;"><p>%</p></div>
-					</div>
-					<div class="text-3"><a href="#">Photography</a></div>
-				</div>
-				<div class="col-md-3 ">
-					<div class="circle">
-						<div style="display:inline;width:226px;height:226px;"><canvas width="226" height="226"></canvas><input class="knob" data-angleoffset="0" value="89" data-fgcolor="#2a797b" data-bgcolor="#3a556e" data-width="226" data-height="226" data-thickness=".2" style="width: 117px; height: 75px; position: absolute; vertical-align: middle; margin-top: 75px; margin-left: -179px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 45px; line-height: normal; font-family: Arial; text-align: center; color: rgb(42, 121, 123); padding: 0px; -webkit-appearance: none; background: none;"><p>%</p></div>
-					</div>
-					<div class="text-3"><a href="#">PHP/MYSQL</a></div>
-				</div>
+			<h3>What Can I Do?</h3>
+    <div class="col-lg-3 col-md-6" >
+        <div class="circle">
+          <input class="knob" data-angleOffset=0 value="93" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3 "><a href="#">Photoshop</a></div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="circle">
+          <input class="knob" data-angleOffset=0 value="82" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">HTML5/CSS3</a></div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="circle">
+          <input class="knob" data-angleOffset=0 value="90" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">Photography</a></div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="circle">
+          <input class="knob" data-angleOffset=0 value="89" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">PHP/MYSQL</a></div>
+    </div>
+
+<script>
+  $(function($) {
+    $(".knob").knob({
+        change : function (value) {
+            //console.log("change : " + value);
+        },
+        release : function (value) {
+            //console.log(this.$.attr('value'));
+            console.log("release : " + value);
+        },
+        cancel : function () {
+            console.log("cancel : ", this);
+        },
+        /*format : function (value) {
+            return value + '%';
+        },*/
+        draw : function () {
+            // "tron" case
+            if(this.$.data('skin') == 'tron') {
+                this.cursorExt = 0.3;
+                var a = this.arc(this.cv)  // Arc
+                    , pa                   // Previous arc
+                    , r = 1;
+                this.g.lineWidth = this.lineWidth;
+                if (this.o.displayPrevious) {
+                    pa = this.arc(this.v);
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.pColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                    this.g.stroke();
+                }
+                this.g.beginPath();
+                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                this.g.stroke();
+                this.g.lineWidth = 2;
+                this.g.beginPath();
+                this.g.strokeStyle = this.o.fgColor;
+                this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                this.g.stroke();
+                return false;
+            }
+        }
+    });
+    // Example of infinite knob, iPod click wheel
+    var v, up=0,down=0,i=0
+        ,$idir = $("div.idir")
+        ,$ival = $("div.ival")
+        ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+        ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+    $("input.infinite").knob(
+                        {
+                        min : 0
+                        , max : 20
+                        , stopper : false
+                        , change : function () {
+                                        if(v > this.cv){
+                                            if(up){
+                                                decr();
+                                                up=0;
+                                            }else{up=1;down=0;}
+                                        } else {
+                                            if(v < this.cv){
+                                                if(down){
+                                                    incr();
+                                                    down=0;
+                                                }else{down=1;up=0;}
+                                            }
+                                        }
+                                        v = this.cv;
+                                    }
+                        });
+    });
+</script>
+<script type="text/javascript">
+          google_api_map_init();
+          function google_api_map_init(){
+            var map;
+            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14));
+            var styleArray = [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#193341"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c5a71"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#29768a"
+            },
+            {
+                "lightness": -37
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#3e606f"
+            },
+            {
+                "weight": 2
+            },
+            {
+                "gamma": 0.84
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "weight": 0.6
+            },
+            {
+                "color": "#1a3541"
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c5a71"
+            }
+        ]
+    }
+]
+            function initialize() {
+              var mapOptions = {
+                zoom: 13,
+                center: coordData,
+                scrollwheel: false,
+                styles: styleArray
+              }
+              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(coordData);
+              var center = map.getCenter();
+            });
+          }
+            google.maps.event.addDomListener(window, "load", initialize);
+          }
+      </script>
+      <script src="js/jquery.knob.js"></script>
+<script src="js/isotop_ini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="clearfix"></div>
 			</div>
 		</div>
