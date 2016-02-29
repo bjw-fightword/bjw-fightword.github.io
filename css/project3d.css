@@ -1,0 +1,65 @@
+
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+ul{
+	text-align: center;
+}
+
+
+/* 3d轮播 */
+#slides{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	perspective:1200px;
+
+
+}
+#slides .samples{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -50px;
+	transition:all 0.6s ease;
+	margin-top: 30px;	
+}
+.samples.slides-1{
+	transform:translateX(-570px) translateZ(-410px);
+} 
+.samples.slides-2{
+	transform:translateX(-420px) translateZ(-310px);
+	z-index: 2;
+}
+.samples.slides-3{
+	transform:translateX(-270px) translateZ(-210px);
+	z-index: 3;
+}
+.samples.slides-4{
+	transform:translateX(-120px) translateZ(-110px);
+	z-index: 4;
+}
+.samples.slides-5{
+	transform:translateX(0) translateZ(0);
+	z-index: 5;
+}
+.samples.slides-6{
+	transform:translateX(120px) translateZ(-120px);
+	z-index: 4;
+}
+.samples.slides-7{
+	transform:translateX(270px) translateZ(-220px);
+	z-index: 3;
+}
+.samples.slides-8{
+	transform:translateX(420px) translateZ(-320px);
+	z-index: 2;
+}
+ .samples.slides-9{
+	transform:translateX(570px) translateZ(-420px);
+	z-index: 1;
+} 

@@ -12,6 +12,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 	<link href="css/project.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/skill-style.css" rel="stylesheet" type="text/css" media="all" />	
+	<link href="css/project3d.css" rel="stylesheet" type="text/css" media="all" />	
 	<!--//theme-style-->
 	<!--fonts-->
 	<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -20,6 +21,7 @@
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/project.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="js/project3d.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -95,27 +97,6 @@
 						</script>
 						<!--/script-for-sticky-nav-->
 					</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 					<div class="header-right col-md-3">
 						<ul>
 							<li><a href="#"><span class="fb"> </span></a></li>
@@ -458,43 +439,171 @@
 		<div class="container">
 			<div class="price-main"style="padding-top:80px">
 				<h3>My Project</h3>
+				<!-- 
 				<div class="col-md-4 gallery-grid gallery1">
-					<a href="./images/p1.jpg" class="swipebox">
-						<img src="./images/project-tianmao.jpg" class="img-responsive" alt="/">
-					</a>
+					<img src="./images/project-tianmao.jpg" class="img-responsive" alt="/">
 					<div class="textbox">
-						<a href="./images/p1.jpg" class="swipebox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-						</a>
+						<h4>Project Name</h4>
+						<p>WEB DESIGN</p>
 						<div class="button">
-							<a href="./images/p1.jpg" class="swipebox">	
-							</a>
 							<a href="/tianmao">VIEW
 							</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 gallery-grid gallery1">
-					<a href="./images/p2.jpg" class="swipebox"><img src="./images/project-xiaomi.jpg" class="img-responsive" alt="/">
-						</a><div class="textbox"><a href="./images/p2.jpg" class="swipebox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-							</a><div class="button"><a href="./images/p2.jpg" class="swipebox"></a><a href="/xiaomi" class="swipebox">VIEW</a></div>
+					<img src="./images/project-xiaomi.jpg" class="img-responsive" alt="/">
+					<div class="textbox">
+						<h4>Project Name</h4>
+						<p>WEB DESIGN</p>
+						<div class="button">
+							<a href="/xiaomi" class="swipebox">VIEW</a>
 						</div>
+					</div>
 				</div>
 				<div class="col-md-4 gallery-grid gallery1">
-					<a href="./images/p3.jpg" class="swipebox"><img src="./images/project-yihaodian.jpg" class="img-responsive" alt="/">
-						</a><div class="textbox"><a href="./images/p3.jpg" class="swipebox">
-							<h4>Project Name</h4>
-							<p>WEB DESIGN</p>
-							</a><div class="button"><a href="./images/p3.jpg" class="swipebox"></a><a href="/yihaodian" class="swipebox">VIEW</a></div>
+					<img src="./images/project-yihaodian.jpg" class="img-responsive" alt="/">
+					<div class="textbox">
+						<h4>Project Name</h4>
+						<p>WEB DESIGN</p>
+						<div class="button">
+							<a href="/yihaodian" class="swipebox">VIEW
+							</a>
 						</div>
-				</div>
-				<div class="clearfix"></div>
+					
+				<div class="clearfix"></div></div> -->
+
+
+
+
+
+
+
+				<ul>
+					<li id="slides">
+						<div class="price-left-one samples slides-1" id="hexagon" >
+							<div class="price-left-two project_a">
+								<h5>天猫</h5>
+								<a href="/tianmao"></a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Service</li>
+								<li>Third Service</li>
+								<li>Fourth Service</li>
+							</ul>
+						</div>
+						<div class="price-left-one samples slides-2" id="hexagon"  >
+							<div class="price-left-two project_b">
+								<h5>小米</h5>
+								<a href="/xiaomi"> </a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Service</li>
+								<li>Third Service</li>
+								<li>Fourth Service</li>
+							</ul>
+						</div>
+						<div class="price-left-one samples slides-3" id="hexagon"  >
+							<div class="price-left-two project_c">
+								<h5>苹果</h5>
+								<a href="/apple"> </a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Service</li>
+								<li>Third Service</li>
+								<li>Fourth Service</li>
+							</ul>
+						</div>
+						<div class="price-left-one samples slides-4" id="hexagon"  >
+							<div class="price-left-two project_d">
+								<h5>响应式</h5>
+								<a href="/bootstrap"> </a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Servic</li>
+								<li>Third Service</li>
+								<li>Fourth Servic</li>
+							</ul>
+						</div>
+						<div class="price-left-one samples slides-5" id="hexagon"  >
+							<div class="price-left-two project_e">
+								<h5>一号店</h5>
+								<a href="/yihaodian"> </a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Servic</li>
+								<li>Third Service</li>
+								<li>Fourth Servic</li>
+							</ul>
+						</div>
+						<div class="price-left-one samples slides-6" id="hexagon"  >
+							<div class="price-left-two project_f">
+								<h5>锤子</h5>
+								<a href="/chuizi"></a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Servic</li>
+								<li>Third Service</li>
+								<li>Fourth Servic</li>
+							</ul>
+						</div>
+						<div class="price-left-one samples slides-7" id="hexagon"  >
+							<div class="price-left-two project_g">
+								<h5>QQ音乐</h5>
+								<a href="/QQmusic"> </a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Service</li>
+								<li>Third Service</li>
+								<li>Fourth Service</li>
+							</ul>
+						</div>
+						<div class="price-left-one samples slides-8" id="hexagon"  >
+							<div class="price-left-two project_h">
+								<h5>五指棋</h5>
+								<a href="/cavas-fir"> </a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Service</li>
+								<li>Third Service</li>
+								<li>Fourth Service</li>
+							</ul>
+						</div>
+						<div class="price-left-one samples slides-9" id="hexagon"  >
+							<div class="price-left-two project_i">
+								<h5>像素鸟</h5>
+								<a href="/flappy-bird"> </a>
+							</div>
+							<ul>
+								<li>First Service</li>
+								<li>Second Service</li>
+								<li>Third Service</li>
+								<li>Fourth Service</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
 	<!--end-project-->
 	<!--start-quality-->
 	<div class="quality"style="padding-top:900px;">

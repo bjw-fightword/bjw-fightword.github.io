@@ -262,7 +262,6 @@ color:#000;
 	-ms-transition:0.5s all;
 	margin-top: 12px;
 }
-
 .header-right ul li span.fb,.about-left ul li span.fb{
 	background-position:0px 0px;
 }
@@ -601,33 +600,41 @@ color:#000;
 	left: 15px;
 	text-align:center;
 }
-.price-left-two{
+.project_a{
 	background:url(../images/tianmao.png) no-repeat;
 }
-.price-left-three{
+.project_b{
 	background:url(../images/xiaomi.png) no-repeat;
 }
-.price-left-top{
+.project_c{
 	background:url(../images/apple.png) no-repeat;
 }
+.project_d{
+	background:url(../images/bootstrap.png) no-repeat;
+}
+.project_e{
+	background:url(../images/yihaodian.png) no-repeat;
+}
+.project_f{
+	background:url(../images/chuizi.png) no-repeat;
+}
+.project_g{
+	background:url(../images/qqmusic.png) no-repeat;
+}
+.project_h{
+	background:url(../images/wuzhiqi.png) no-repeat;
+}
+.project_i{
+	background:url(../images/bird.png) no-repeat;
+}
 .price-left-two h5,.price-left-top h5{
-	color: #fff;
+	color: #000;
 	font-size: 14px;
 	letter-spacing: 2px;
 	font-weight: 100;
 	margin: 20% 0px 0px 0px;
-}
-.price-left-top p {
-	color: #222222;
-	font-size: 18px;
-	font-weight: 100;
-	margin-top: 5px;
-}
-.price-left-two p {
-	color: #e22e2e;
-	font-size: 18px;
-	font-weight: 100;
-	margin-top: 5px;
+	font-family: "微软雅黑"
+
 }
 .price-left-two a,.price-left-top a{
 	background: url(../images/price-arrow.png) no-repeat;
@@ -665,7 +672,7 @@ color:#000;
 	top: 55%;
 	left: 25%;
 }
-.price-left-one ul {
+.samples ul {
 	padding: 0px;
 	position: absolute;
 	top: 64%;
@@ -699,55 +706,7 @@ color:#000;
 }
 
 /* 项目 */
-.projects{
-	position: absolute;
-	left: 50%;
-	top:80px;
-	text-align: center;
-	transition:all 0.6s ease;
-	margin-left: -100px;
-}
-.project-box{
-	position: relative;
-}
-.My-Project-1{
-	transform:translateX(-400px) translateZ(-400px);
-}
-.My-Project-2{
-	transform:translateX(-300px) translateZ(-300px);
-	z-index: 2;
-}
-.My-Project-3{
-	transform:translateX(-200px) translateZ(-200px);
-	z-index: 3;
-}
-.My-Project-4{
-	transform:translateX(-100px) translateZ(-100px);
-	z-index: 4;
-}
-.My-Project-5{
-	transform:translateX(0) translateZ(0);
-	z-index: 5;
-}
-.My-Project-6{
-	transform:translateX(100px) translateZ(-100px);
-	z-index: 4;
-}
-.My-Project-7{
-	transform:translateX(200px) translateZ(-200px);
-	z-index: 3;
-}
-.My-Project-8{
-	transform:translateX(300px) translateZ(-300px);
-	z-index: 2;
-}
-.My-Project-9{
-	transform:translateX(400px) translateZ(-400px);
-	z-index: 1;
-}
-.project-src{
-	display: none;
-}
+
 
 
 
