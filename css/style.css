@@ -395,7 +395,7 @@ color:#000;
 	margin: 0;
 	text-align: center;
 	position: relative;
-	background: url(../images/hexa1.png) no-repeat 500px 0px;
+	background: url(../images/hexa1.png) no-repeat center center;
 	padding: 1em 0px;
 }
 .what-main h4,.what-middle-right h4{
@@ -444,6 +444,20 @@ color:#000;
 /*--end-what--*/
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*--start-project--*/
+
+#img-sketch{
+	background-image: url(../images/sketch.png);
+}
+
+#img-snake{
+	background-image: url(../images/snake.png);
+}
+
+#img-icloud{
+	background-image: url(../images/icloud.png);
+}
+
+
 .project-left img{
 	width:100%;
 }
@@ -1723,7 +1737,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 }
 .what-main h3, .blog-main h3, .price-main h3, .quality-main h3, .touch-main h3, .clients-mian h3 {
 	font-size: 2.25em;
-	background: url(../images/hexa1.png) no-repeat 253px 4px;
+	background: url(../images/hexa1.png) no-repeat center center;
 	padding: 31px 0px;
 	background-size: 85px;
 }
