@@ -177,12 +177,10 @@ color:#000;
 		float: none;
 	}
 	.toggleMenu {
-		padding: 5px 10px;
 		width: 100%;
 		margin-top: 6px;
 	}
 	.nav li a {
-		padding: 9px 15px;
 		color: #212121;
 	}
 	.nav {
@@ -220,7 +218,6 @@ color:#000;
 	.toggleMenu{
 		padding: 0;
 	}
-
 }
 @media(max-width:500px){
 	.header-left-logo{
@@ -236,9 +233,6 @@ color:#000;
 	.header-left-text a img{
 		margin-top: -8px;
 	}
-}
-@media(max-width:450px){
-	
 }
 .header-right ul{
 	padding:0;
@@ -329,7 +323,6 @@ color:#000;
 	background-size:100% 100%;
 	min-height:660px;
 }
-
 .about-left h4{
 	color:#fff;
 	font-weight:400;
@@ -384,7 +377,7 @@ color:#000;
 /*--start-what--*/
 .what {
 	background: #272727;
-	padding: 6em 0px 2em 0px;
+	padding: 4em 0px 2em 0px;
 }
 .what-main h3,.blog-main h3,.price-main h3,
 .quality-main h3,.touch-main h3,.clients-mian h3{
@@ -400,17 +393,19 @@ color:#000;
 }
 .what-main h4,.what-middle-right h4{
 	color: #e22e2e;
-	font-size: 2.3em;
+	font-size: 2em;
 	font-weight: 400;
 	letter-spacing: 1px;
 	margin: 0;
 	line-height: 1.2em;
+	text-align: left;
 }
 .what-main h4 span,.what-middle-right h4 span{
 	font-weight:100;
 }
 .what-top-right,.what-middle-left{
 	text-align:center;
+	vertical-align: middle;
 }
 .what-top-left {
 	text-align: right;
@@ -422,8 +417,10 @@ color:#000;
 	font-weight: 900;
 	letter-spacing: 2px;
 	margin: 1em 0px 0px 0px;
+	text-align: left;
 }
 .what-top-left p,.what-middle-right p {
+	text-align: left;
 	color: #fff;
 	font-size: 19px;
 	line-height: 1.4em;
@@ -432,14 +429,16 @@ color:#000;
 	margin-top: 1em;
 }
 .what-top{
-	margin: 8em 0px;
+	margin: 6em 0px;
+	vertical-align: middle;
 }
 .what-middle{
-	margin: 10em 0px;
+	margin: 6em 0px;
+	vertical-align: middle;
 }
 .what-middle-right {
 	text-align: left;
-	padding-left: 19%;
+	padding-left: 11%;
 }
 /*--end-what--*/
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
@@ -456,7 +455,9 @@ color:#000;
 #img-icloud{
 	background-image: url(../images/icloud.png);
 }
-
+#fullPage{
+	background-image: url(../images/fullpage.png);
+}
 
 .project-left img{
 	width:100%;
@@ -533,7 +534,6 @@ color:#000;
 /*--start-price--*/
 .price{
 	background:#e1e1e1;
-	padding: 0em 0px 10em 0px;
 }
 #hexagon1 {
 	width: 200px;
@@ -834,7 +834,6 @@ color:#000;
 /*--start-quality--*/
 .quality{
 	background:#e1e1e1;
-	padding: 3em 0px 8%;
 }
 .quality-main{
 	text-align:center;
@@ -851,11 +850,25 @@ color:#000;
 	margin-top: 1.5em;
 }
 .quality-top-one span{
-	background: url(../images/price-1.png) no-repeat;
 	width: 170px;
 	height: 200px;
 	display: block;
 	margin:0 auto;
+}
+.UI-1{
+	background: url(../images/ps.png) no-repeat;
+}
+.UI-2{
+	background: url(../images/VI.png) no-repeat;
+}
+.UI-3{
+	background: url(../images/IOS.png) no-repeat;
+}
+.UI-4{
+	background: url(../images/ai.png) no-repeat;
+}
+.UI-5{
+	background: url(../images/Android.png) no-repeat;
 }
 .quality-top-one{
 	width:20%;
@@ -864,28 +877,6 @@ color:#000;
 }
 .quality-top-one span.one{
 	margin-top: 35%;
-}
-.quality-bottom label,.touch-right-top span{
-	background: url(../images/main-sprit.png) no-repeat;
-	width:35px;
-	height: 46px;
-	display: block;
-	margin:0 auto;
-}
-.quality-bottom label.rsh{
-	background-position:-105px 0px;
-}
-.quality-bottom label.dsg{
-	background-position:-140px 0px;
-}
-.quality-bottom label.pro{
-	background-position:-175px 0px;
-}
-.quality-bottom label.imp{
-	background-position:-210px 0px;
-}
-.quality-bottom label.luh{
-	background-position:-245px 0px;
 }
 .quality-bottom p {
 	color: #fff;

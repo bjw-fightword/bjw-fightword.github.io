@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>白建武个人站</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="6cors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+
+
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
 	<!--theme-style-->
@@ -19,8 +20,6 @@
 	<!--//fonts-->
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/project.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript" src="js/project3d.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -54,33 +53,23 @@
 							<a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt=""/></a>
 							<ul class="nav">
 								<li><a href="#about" class="scroll">ABOUT</a></li>
-								<li><a href="#services" class="scroll">SKILLS</a></li>
-								<li><a href="#work" class="scroll">PROJECTS</a></li>
-								<li><a href="#pricing" class="scroll">EXPERIENCE</a></li>
-								<li><a href="#blogs" class="scroll">DESIZE</a></li>
-								<li><a href="#contact" class="scroll">CONTANT</a></li>
+								<li><a href="#work" class="scroll">SKILLS</a></li>
+								<li><a href="#pricing" class="scroll">PROJECTS</a></li>
+								<li><a href="#Experience" class="scroll">EXPERIENCE</a></li>
+								<li><a href="#Desize" class="scroll">DESIZE</a></li>
+								<li><a href="#Evaluation" class="scroll">CONTANT</a></li>
 							</ul>
 						</div>
 						<div class="clearfix"></div>
-						<script type="text/javascript" src="js/nav.js"></script>
-						<script type="text/javascript">
-						jQuery(document).ready(function($) {
-							$(".scroll").click(function(event){		
-								event.preventDefault();
-								$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-							});
-						});
-						</script>		
-						<!--script-->
 						<script>
-						$(document).ready(function(){
-							$(".nav li a").click(function(){
-								$(this).parent().addClass("active");
-								$(this).parent().siblings().removeClass("active");
+							$(document).ready(function(){
+								$(".nav li a").click(function(){
+									$(this).parent().addClass("active");
+									$(this).parent().siblings().removeClass("active");
+								});
 							});
-						});
 						</script>
-						<!--script-for-sticky-nav-->
+                       <!-- 导航绝对定位-->
 						<script>
 						$(document).ready(function() {
 							var navoffeset=$(".header-home").offset().top;
@@ -95,7 +84,7 @@
 
 						});
 						</script>
-						<!--/script-for-sticky-nav-->
+						
 					</div>
 					<div class="header-right col-md-3">
 						<ul>
@@ -118,54 +107,55 @@
 				<h3>ABOUT ME</h3>
 				<div class="about-top">
 					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
-						<img src="./images/aihao.png" alt="">
-						<h4 style="margin-top:30px">Hobby</h4>
-						<h5 style="margin-top:27px"> cycle music travel</h5>
+						<img src="./images/nianlin.png" alt="">
+						<h4 style="margin-top:30px">姓名/性别/年龄</h4>
+						<h5 style="margin-top:27px">白建武/男/25</h5>
 						<ul>
 							<li><a href="#"><span class="drbl"> </span></a></li>
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
 					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
-						<img src="./images/nianlin.png" alt="">
-						<h4 style="margin-top:30px">Age</h4>
-						<h5 style="margin-top:27px">25 years old</h5>
+						<img src="./images/xueli.png" alt="">
+						<h4 style="margin-top:30px">学历</h4>
+						<h5 style="margin-top:27px">本科</h5>
 						<ul>
 							<li><a href="#"><span class="fb"> </span></a></li>
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
 					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
-						<img src="./images/dizhi.png" alt="">
-						<h4 style="margin-top:30px">Address</h4>
-						<h5 style="margin-top:27px">Beijing</h5>
+						<img src="./images/yixiang.png" alt="">
+						<h4 style="margin-top:30px">求值意向</h4>
+						<h5 style="margin-top:27px">前端工程师</h5>
 						<ul>
 							<li><a href="#"><span class="twit"> </span></a></li>
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
 					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
-						<img src="./images/yixiang.png" alt="">
-						<h4 style="margin-top:30px">Objective</h4>
-						<h5 style="margin-top:27px">Front End Engineer</h5>
+						<img src="./images/dizhi.png" alt="">
+						<h4 style="margin-top:30px">现居地</h4>
+						<h5 style="margin-top:27px">北京</h5>
 						<ul>
 							<li><a href="#"><span class="drbl"> </span></a></li>
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
 					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
-						<img src="./images/zhuantai.png" alt="">
-						<h4 style="margin-top:30px">State</h4>
-						<h5 style="margin-top:27px">unemployed</h5>
+						<img src="./images/dianhua.png" alt="">
+						<h4 style="margin-top:30px">联系方式</h4>
+						<h5 style="margin-top:27px">18234090787</h5>
 						<ul>
 							<li><a href="#"><span class="fb"> </span></a></li>
 							<li><a href="#"><span class="sap"> </span></a></li>
 						</ul>
 					</div>
 					<div class="col-lg-2 col-md-4 col-sm-6 about-left">
-						<img src="./images/xueli.png" alt="">
-						<h4>Education Background</h4>
-						<h5>undergraduate course</h5>
+						<img src="./images/youxiang.png" alt="">
+						<h4>电子邮箱</h4>
+						<h5>baijianwu900823</h5>
+                        <h5>@sina.com</h5>
 						<ul>
 							<li><a href="#"><span class="twit"> </span></a></li>
 							<li><a href="#"><span class="sap"> </span></a></li>
@@ -184,68 +174,61 @@
 			<h3>What Can I Do?</h3>
     <div class="col-lg-3 col-md-6" >
         <div class="circle">
-          <input class="knob" data-angleOffset=0 value="98" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+          <input class="knob" value="98" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
       <div class="text-3 "><a href="#">Html/Css</a></div>
     </div>
     <div class="col-lg-3 col-md-6">
       <div class="circle">
-          <input class="knob" data-angleOffset=0 value="92" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+          <input class="knob" value="92" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
       <div class="text-3"><a href="#">HTML5/CSS3</a></div>
     </div>
     <div class="col-lg-3 col-md-6">
       <div class="circle">
-          <input class="knob" data-angleOffset=0 value="90" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+          <input class="knob" value="90" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
       <div class="text-3"><a href="#">jQuery</a></div>
     </div>
     <div class="col-lg-3 col-md-6">
       <div class="circle">
-          <input class="knob" data-angleOffset=0 value="82" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+          <input class="knob" value="82" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
       <div class="text-3"><a href="#">Angularjs</a></div>
     </div>		
     <div class="col-lg-3 col-md-6" >
         <div class="circle">
-          <input class="knob" data-angleOffset=0 value="90" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+          <input class="knob" value="90" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
       <div class="text-3 "><a href="#">Phptoshop</a></div>
     </div>
     <div class="col-lg-3 col-md-6">
       <div class="circle">
-          <input class="knob" data-angleOffset=0 value="80" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+          <input class="knob" value="80" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
       <div class="text-3"><a href="#">Phpcms</a></div>
     </div>
     <div class="col-lg-3 col-md-6">
       <div class="circle">
-          <input class="knob" data-angleOffset=0 value="92" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+          <input class="knob" value="92" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
       <div class="text-3"><a href="#">Hybird App</a></div>
     </div>
     <div class="col-lg-3 col-md-6">
       <div class="circle">
-          <input class="knob" data-angleOffset=0 value="86" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+          <input class="knob" value="86" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
       <div class="text-3"><a href="#">Ajax</a></div>
     </div>
+
+
+
+
+
+
 <script>
   $(function($) {
     $(".knob").knob({
-        change : function (value) {
-            //console.log("change : " + value);
-        },
-        release : function (value) {
-            //console.log(this.$.attr('value'));
-            console.log("release : " + value);
-        },
-        cancel : function () {
-            console.log("cancel : ", this);
-        },
-        /*format : function (value) {
-            return value + '%';
-        },*/
         draw : function () {
             // "tron" case
             if(this.$.data('skin') == 'tron') {
@@ -280,157 +263,10 @@
         ,$ival = $("div.ival")
         ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
         ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
-    $("input.infinite").knob(
-                        {
-                        min : 0
-                        , max : 20
-                        , stopper : false
-                        , change : function () {
-                                        if(v > this.cv){
-                                            if(up){
-                                                decr();
-                                                up=0;
-                                            }else{up=1;down=0;}
-                                        } else {
-                                            if(v < this.cv){
-                                                if(down){
-                                                    incr();
-                                                    down=0;
-                                                }else{down=1;up=0;}
-                                            }
-                                        }
-                                        v = this.cv;
-                                    }
-                        });
     });
 </script>
-<script type="text/javascript">
-          google_api_map_init();
-          function google_api_map_init(){
-            var map;
-            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14));
-            var styleArray = [
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#193341"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#2c5a71"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#29768a"
-            },
-            {
-                "lightness": -37
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#406d80"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#406d80"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#3e606f"
-            },
-            {
-                "weight": 2
-            },
-            {
-                "gamma": 0.84
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "weight": 0.6
-            },
-            {
-                "color": "#1a3541"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#2c5a71"
-            }
-        ]
-    }
-]
-            function initialize() {
-              var mapOptions = {
-                zoom: 13,
-                center: coordData,
-                scrollwheel: false,
-                styles: styleArray
-              }
-              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-            google.maps.event.addDomListener(window, 'resize', function() {
-              map.setCenter(coordData);
-              var center = map.getCenter();
-            });
-          }
-            google.maps.event.addDomListener(window, "load", initialize);
-          }
-      </script>
-     	<script src="js/jquery.knob.js"></script>
-		<script src="js/isotop_ini.js"></script>
+      
+		
 				<div class="clearfix"></div>
 			</div>
 		</div>
@@ -442,7 +278,7 @@
 			<div class="price-main"style="padding-top:80px">
 				<h3>My Project</h3>
 				<div class="price-top"style="margin-top: 10%;">
-					<div class="col-md-4 price-left">
+					<div class="col-md-3 price-left">
 						<div class="price-left-middle" id="hexagon1">
 							<div class="price-left-two"  id="img-sketch">
 								<h5>画板</h5>
@@ -458,7 +294,25 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-4 price-left">
+					<div class="col-md-3 price-left">
+						<div class="price-left-middle" id="hexagon2">
+							<div class="price-left-top" id="">
+								<h5>fullPage</h5>
+								
+								<a href="/fullpage"> </a>
+							</div>
+							<ul>
+								<li><a href="#">First Service</a></li>
+								<li><a href="#">Second Service</a></li>
+								<li><a href="#">Third Service</a></li>
+								<li><a href="#">Fourth Service</a></li>
+								<li class="fth"><a href="#">Fifth Service</a></li>
+								<li class="fth"><a href="#">6th Service</a></li>
+							</ul>
+						</div>
+					</div>
+					</div>
+					<div class="col-md-3 price-left">
 						<div class="price-left-middle" id="hexagon2">
 							<div class="price-left-top" id="img-snake">
 								<h5>贪吃蛇</h5>
@@ -475,7 +329,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-4 price-left">
+					<div class="col-md-3 price-left">
 						<div class="price-left-middle" id="hexagon1">
 							<div class="price-left-two"  id="img-icloud">
 								<h5>iCloud</h5>
@@ -493,11 +347,19 @@
 					</div>
 					<div class="clearfix"></div>
 				</div>
-				<ul style="margin-top: 10%">
+
+
+
+
+
+
+
+				<ul style="margin-top: 10%;height: 500px">
 					<li id="slides">
 						<div class="price-left-one samples slides-1" id="hexagon" >
+                            
 							<div class="price-left-two project_a">
-								<h5>天猫</h5>
+								<h5><a href="/tianmao"></a></h5>
 								<a href="/tianmao"></a>
 							</div>
 							<ul>
@@ -508,8 +370,9 @@
 							</ul>
 						</div>
 						<div class="price-left-one samples slides-2" id="hexagon"  >
+                            
 							<div class="price-left-two project_b">
-								<h5>小米</h5>
+								<h5><a href="/xiaomi"></a></h5>
 								<a href="/xiaomi"> </a>
 							</div>
 							<ul>
@@ -520,9 +383,10 @@
 							</ul>
 						</div>
 						<div class="price-left-one samples slides-3" id="hexagon"  >
+                           
 							<div class="price-left-two project_c">
-								<h5>苹果</h5>
-								<a href="/apple"> </a>
+								<h5><a href="/apple"></a></h5>
+								 <a href="/apple"> </a>
 							</div>
 							<ul>
 								<li>First Service</li>
@@ -532,9 +396,10 @@
 							</ul>
 						</div>
 						<div class="price-left-one samples slides-4" id="hexagon"  >
+                           
 							<div class="price-left-two project_d">
-								<h5>响应式</h5>
-								<a href="/bootstrap"> </a>
+								<h5><a href="/bootstrap"></a></h5>
+								 <a href="/bootstrap"> </a>
 							</div>
 							<ul>
 								<li>First Service</li>
@@ -544,9 +409,10 @@
 							</ul>
 						</div>
 						<div class="price-left-one samples slides-5" id="hexagon"  >
+                           
 							<div class="price-left-two project_e">
-								<h5>一号店</h5>
-								<a href="/yihaodian"> </a>
+								<h5><a href="/yihaodian"></a></h5>
+								 <a href="/yihaodian"> </a>
 							</div>
 							<ul>
 								<li>First Service</li>
@@ -556,9 +422,10 @@
 							</ul>
 						</div>
 						<div class="price-left-one samples slides-6" id="hexagon"  >
+                           
 							<div class="price-left-two project_f">
-								<h5>锤子</h5>
-								<a href="/chuizi"></a>
+								<h5><a href="/chuizi"></a></h5>
+								 <a href="/chuizi"></a>
 							</div>
 							<ul>
 								<li>First Service</li>
@@ -568,8 +435,9 @@
 							</ul>
 						</div>
 						<div class="price-left-one samples slides-7" id="hexagon"  >
+                            
 							<div class="price-left-two project_g">
-								<h5>QQ音乐</h5>
+								<h5><a href="/QQmusic"></a></h5>
 								<a href="/QQmusic"> </a>
 							</div>
 							<ul>
@@ -580,8 +448,9 @@
 							</ul>
 						</div>
 						<div class="price-left-one samples slides-8" id="hexagon"  >
+                            
 							<div class="price-left-two project_h">
-								<h5>五指棋</h5>
+								<h5><a href="/cavas-fir"></a></h5>
 								<a href="/cavas-fir"> </a>
 							</div>
 							<ul>
@@ -592,8 +461,9 @@
 							</ul>
 						</div>
 						<div class="price-left-one samples slides-9" id="hexagon"  >
+                            
 							<div class="price-left-two project_i">
-								<h5>像素鸟</h5>
+								<h5><a href="/flappy-bird"></a></h5>
 								<a href="/flappy-bird"> </a>
 							</div>
 							<ul>
@@ -609,46 +479,26 @@
 		</div>
 	</div>
 	<!--end-project-->
-	<!--start-quality-->
-	<div class="quality"style="padding-top: 15%;">
-		<div class="container">
+	<!--start-Desize-->
+	<div class="quality" id="Desize">
+		<div class="container ">
 			<div class="quality-main">
 				<h3>My Desize</h3>
 				<div class="quality-top">
 					<div class="quality-top-one">
-						<span> </span>
-						<div class="quality-bottom quality-bottom-rsh"style="text-align: center;">
-							<label class="rsh"> </label>
-							<a href="/desize"><p>PS/AI</p></a>
-						</div>
+						<a href="/desize"><span class="UI-1"> </span></a>
 					</div>
 					<div class="quality-top-one">
-						<span class="one"> </span>
-						<div class="quality-bottom quality-bottom-dsg"style="text-align: center;">
-							<label class="dsg"> </label>
-							<a href="/desize"><p>LOW POLY</p></a>
-						</div>
+						<a href="/desize"><span class="one UI-2"> </span></a>
 					</div>
 					<div class="quality-top-one">
-						<span> </span>
-						<div class="quality-bottom quality-bottom-pro"style="text-align: center;">
-							<label class="pro"> </label>
-							<a href="/desize"><p>VI DESIZE</p></a>
-						</div>
+						<a href="/desize"><span class="UI-3"> </span></a>
 					</div>
 					<div class="quality-top-one">
-						<span class="one"> </span>
-						<div class="quality-bottom quality-bottom-imp"style="text-align: center;">
-							<label class="imp"> </label>
-							<a href="/desize"><p>ANDROID</p></a>
-						</div>
+						<a href="/desize"><span class="one UI-4"> </span></a>
 					</div>
 					<div class="quality-top-one">
-						<span> </span>
-						<div class="quality-bottom quality-bottom-luh"style="text-align: center;">
-							<label class="luh"></label>
-							<a href="/desize"><p>IOS</p></a>
-						</div>	
+						<a href="/desize"><span class="UI-5"> </span></a>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -656,95 +506,66 @@
 		</div>
 	</div>
 	<!--end-quality-->
-	<!--start-clients-->
-	<!--end-clients-->
 	<!--Slider-Starts-Here-->
-	<script src="js/responsiveslides.min.js"></script>
-	<script>
-			    // You can also use "$(window).load(function() {"
-			    	$(function () {
-			      // Slideshow 4
-			      $("#slider4").responsiveSlides({
-			      	auto: true,
-			      	pager: true,
-			      	nav: true,
-			      	speed: 500,
-			      	namespace: "callbacks",
-			      	before: function () {
-			      		$('.events').append("<li>before event fired.</li>");
-			      	},
-			      	after: function () {
-			      		$('.events').append("<li>after event fired.</li>");
-			      	}
-			      });
 
-			  });
-			    	</script>
-			    	<script>
-			    // You can also use "$(window).load(function() {"
-			    	$(function () {
-			      // Slideshow 4
-			      $("#slider5").responsiveSlides({
-			      	auto: true,
-			      	pager: true,
-			      	nav: false,
-			      	speed: 500,
-			      	namespace: "callbacks",
-			      	before: function () {
-			      		$('.events').append("<li>before event fired.</li>");
-			      	},
-			      	after: function () {
-			      		$('.events').append("<li>after event fired.</li>");
-			      	}
-			      });
-
-			  });
-			    	</script>
 			    	<!--End-slider-script-->
 			    	<!--start-blog-->
-			    	
-			    	<!--end-blog-->
-			    	<!--start-contact-->
-			    	<div class="touch" id="contact">
-			    		<div class="container">
-			    			<div class="touch-main">
-			    				<h3>Get In Touch</h3>
-			    				<div class="touch-top">
-			    					<div class="col-md-6 touch-left">
-			    						<p>DROP US A LINE</p>
-			    						<form>
-			    							<input type="text" class="active" placeholder="Name" required="">
-			    							<input type="text" placeholder="Email" required="">
-			    							<input type="text" placeholder="Subject" required="">
-			    							<textarea placeholder="Message" required=""></textarea>
-			    							<div class="sub-button">
-			    								<input type="submit" value="SEND IT">
-			    							</div>
-			    						</form>	
-			    					</div>
-			    					<div class="col-md-6 touch-right">
-			    						<div class="touch-right-bottom">
-			    							<div class="touch-right-top">
-			    								<span class="add"> </span>
-			    								<h4>123 MAIN STREET,<label>CITY, COUNTRY</label></h4>
-			    							</div>
-			    							<div class="touch-right-top">
-			    								<span class="mail"> </span>
-			    								<p><a href="emainto:example@email.com">EMAIL@DOMAIN.COM</a></p>
-			    							</div>
-			    							<div class="touch-right-top">
-			    								<span class="num"> </span>
-			    								<p>18234090787</p>
-			    							</div>
-			    						</div>
-			    					</div>
-			    					<div class="clearfix"></div>
-			    				</div>
-			    			</div>
-			    		</div>
-			    	</div>
-			    	<!--end-contact-->
-			    	<!--start-footer-->
+    <div class="what" id="Experience">
+        <div class="container">
+           	<div class="what-main">
+            	<h3>Work Experience</h3>
+                    <div class="what-top">
+                        <div class="col-md-6 what-top-left">
+                                        <h4>2015年7月-2016年3月</h4>
+                                        <h5>山西硬汉科技有限公司</h5>
+                                        <h5>前端工程师</h5>
+                                        <p>负责公司项目中前端页面的搭建，动效的实现以及与后台之间的叫交互</p>
+                                        <h5>主要项目</h5>
+                                        <p>主要项目广州建筑集团有限公司整站(已上线)<br>
+                                        fullpage、像素鸟、画板、贪吃蛇、学生管理系统、扫雷等自学项目
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 what-top-right">
+                                        <img src="images/service-1.png" alt=""/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="what-middle">
+                                    <div class="col-md-6 what-middle-left">
+                                        <img src="images/service-2.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-6 what-middle-right">
+                                        <h4>2014年11月-2015年4月</h4>
+                                        <h5>山西易搜科技有限公司</h5>
+                                        <h5>前端开发</h5>
+                                        <p>负责前端页面的设级、搭建和开发</p>
+                                        <h5>主要项目</h5>
+                                        <p>Bootstrap(响应式)、苹果、锤子、天猫、小米、一号店等电商网站的首页框架与全部动效的实现</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="what" id="Evaluation">
+                        <div class="container">
+                            <div class="what-main">
+                                <h3>Self-Evaluation</h3>
+                                <div class="what-top">
+                                    <div class="col-md-6 what-middle-right" style="margin-top: 30px">
+                                        <h4>自我认识</h4>
+                                        <h5>为人坦诚、积极乐观、有耐心同时具有较强的沟通能力和组织能力</h5>
+                                        <h5>工作积极、团队意识较强、能够传递正能量</h5>
+                                        <h5>接受能力和适应能力较强，同时具有良好的职业形象和高尚的职业道德</h5>
+									</div>
+                                    <div class="col-md-6 what-top-right">
+                                        <img src="images/service-1.png" alt=""/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  		    	
 			    	<div class="footer">
 			    		<div class="container">
 			    			<div class="footer-text">
@@ -753,22 +574,12 @@
 			    		</div>
 			    		<script type="text/javascript">
 			    		$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-								 		*/
-
-								 		$().UItoTop({ easingType: 'easeOutQuart' });
-
-								 	});
+							$().UItoTop({ easingType: 'easeOutQuart' });
+								});
 			    		</script>
 			    		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 			    	</div>
 			    	<!--end-footer-->
-
-			    </body>
-			    </html>
+<script src="js/jquery.knob.js"></script>
+	</body>
+</html>

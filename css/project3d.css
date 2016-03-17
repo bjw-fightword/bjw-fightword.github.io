@@ -6,6 +6,7 @@
 }
 ul{
 	text-align: center;
+	overflow: hidden;
 	
 
 }
@@ -14,10 +15,10 @@ ul{
 /* 3d轮播 */
 #slides{
 	width: 100%;
-	height: 200px;
+	height: 60px;
 	position: relative;
 	perspective:1200px;
-
+	
 
 }
 #slides .samples{
@@ -31,18 +32,18 @@ ul{
 	margin-top: 30px;	
 }
 .samples.slides-1{
-	transform:translateX(-570px) translateZ(-410px);
+	transform:translateX(-600px) translateZ(-410px);
 } 
 .samples.slides-2{
-	transform:translateX(-420px) translateZ(-310px);
+	transform:translateX(-450px) translateZ(-310px);
 	z-index: 2;
 }
 .samples.slides-3{
-	transform:translateX(-270px) translateZ(-210px);
+	transform:translateX(-300px) translateZ(-210px);
 	z-index: 3;
 }
 .samples.slides-4{
-	transform:translateX(-120px) translateZ(-110px);
+	transform:translateX(-150px) translateZ(-110px);
 	z-index: 4;
 }
 .samples.slides-5{
@@ -50,18 +51,18 @@ ul{
 	z-index: 5;
 }
 .samples.slides-6{
-	transform:translateX(120px) translateZ(-120px);
+	transform:translateX(150px) translateZ(-120px);
 	z-index: 4;
 }
 .samples.slides-7{
-	transform:translateX(270px) translateZ(-220px);
+	transform:translateX(300px) translateZ(-220px);
 	z-index: 3;
 }
 .samples.slides-8{
-	transform:translateX(420px) translateZ(-320px);
+	transform:translateX(450px) translateZ(-320px);
 	z-index: 2;
 }
  .samples.slides-9{
-	transform:translateX(570px) translateZ(-410px);
+	transform:translateX(600px) translateZ(-410px);
 	z-index: 1;
 } 
