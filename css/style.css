@@ -462,7 +462,18 @@ color:#000;
 #fullPage{
 	background-image: url(../images/fullpage.png);
 }
-
+#saolei{
+	background: url(../images/saolei.png);
+}
+#guangzhoujianzhu{
+	background: url(../images/guangzhoujianzhu.png);
+}
+#student{
+	background: url(../images/student.png);
+}
+#watch{
+	background: url(../images/watch.png);
+}
 .project-left img{
 	width:100%;
 }
@@ -2458,7 +2469,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 
 
 @media(max-width:640px){
-
+	
 }
 
 
