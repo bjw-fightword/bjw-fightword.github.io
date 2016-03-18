@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>白建武个人站</title>
-
-
-
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
 	<!--theme-style-->
@@ -14,13 +11,14 @@
 	<link href="css/project.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/skill-style.css" rel="stylesheet" type="text/css" media="all" />	
 	<link href="css/project3d.css" rel="stylesheet" type="text/css" media="all" />	
+	<link href="css/projectcss3.css" rel="stylesheet" type="text/css" media="all" />	
 	<!--//theme-style-->
 	<!--fonts-->
 	<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<!--//fonts-->
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/project3d.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -50,7 +48,7 @@
 							<a href="index.html"><img src="images/logo-1.png" alt=""/></a>
 						</div>
 						<div class="header-left-text ">
-							<a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt=""/></a>
+							<a class="toggleMenu" ><img src="images/menu-icon.png" alt=""/ class="min-nav"></a>
 							<ul class="nav">
 								<li><a href="#about" class="scroll">ABOUT</a></li>
 								<li><a href="#work" class="scroll">SKILLS</a></li>
@@ -277,73 +275,135 @@
 		<div class="container">
 			<div class="price-main"style="padding-top:80px">
 				<h3>My Project</h3>
-				<div class="price-top"style="margin-top: 10%;">
-					<div class="col-md-3 price-left">
-						<div class="price-left-middle" id="hexagon1">
-							<div class="price-left-two"  id="img-sketch">
-								<h5>画板</h5>
-								<a href="/angular-sketch"> </a>
-							</div>
-							<ul>
-								<li><a href="#">angular.js</a></li>
-								<li><a href="#">html/css</a></li>
-								<li><a href="#">javascript</a></li>
-								<li><a href="#">h5</a></li>
-								
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 price-left">
-						<div class="price-left-middle" id="hexagon2">
-							<div class="price-left-top" id="fullPage">
-								<h5>fullPage</h5>
-								
-								<a href="/fullpage"> </a>
-							</div>
-							<ul>
-								<li><a href="#">fullPage.js</a></li>
-								<li><a href="#">jQuery</a></li>
-								<li><a href="#">move.js</a></li>
-								<li><a href="#">Bootstrap</a></li>
-								<li class="fth"><a href="#">css3</a></li>
-								<li class="fth"><a href="#">html/css/js</a></li>
-							</ul>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 price-left">
-						<div class="price-left-middle" id="hexagon2">
-							<div class="price-left-top" id="img-snake">
-								<h5>贪吃蛇</h5>
-								
-								<a href="/snake"> </a>
-							</div>
-							<ul>
-								<li><a href="#">h5</a></li>
-								<li><a href="#">jQuery</a></li>
-								<li><a href="#">touch.js</a></li>
-								<li><a href="#">css3</a></li>
-								<li><a href="#">html/css</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 price-left">
-						<div class="price-left-middle" id="hexagon1">
-							<div class="price-left-two"  id="img-icloud">
-								<h5>iCloud</h5>
-								<a href="/angular-iCloud-reminder"> </a>
-							</div>
-							<ul>
-								<li><a href="#">angular.js</a></li>
-								<li><a href="#">jQuery</a></li>
-								<li><a href="#">javascript</a></li>
-								<li><a href="#">html/css</a></li>
-								<li class="fth"><a href="#">css3</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="clearfix"></div>
+
+	<ul class="accordian">
+		<li class="project-css3">
+			<div class="price-left-middle" id="hexagon1">
+				<div class="price-left-two"  id="img-sketch">
+					<h5>画板</h5>
+					<a href="/angular-sketch"> </a>
 				</div>
+				<ul>
+					<li><a href="#">angular.js</a></li>
+					<li><a href="#">html/css</a></li>
+					<li><a href="#">javascript</a></li>
+					<li><a href="#">h5</a></li>					
+				</ul>
+			</div>
+		</li>
+		<li class="project-css3">
+			<div class="price-left-middle" id="hexagon2">
+				<div class="price-left-top" id="fullPage">
+					<h5>fullPage</h5>
+								
+					<a href="/fullpage"> </a>
+				</div>
+				<ul>
+					<li><a href="#">fullPage.js</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">move.js</a></li>
+					<li><a href="#">Bootstrap</a></li>
+					<li class="fth"><a href="#">css3</a></li>
+					<li class="fth"><a href="#">html/css/js</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="project-css3">
+			<div class="price-left-middle" id="hexagon2">
+				<div class="price-left-top" id="img-snake">
+					<h5>贪吃蛇</h5>
+											
+					<a href="/snake"> </a>
+				</div>
+				<ul>
+					<li><a href="#">h5</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">touch.js</a></li>
+					<li><a href="#">css3</a></li>
+					<li><a href="#">html/css</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="project-css3">
+			<div class="price-left-middle" id="hexagon1">
+				<div class="price-left-two"  id="img-icloud">
+					<h5>iCloud</h5>
+					<a href="/angular-iCloud-reminder"> </a>
+				</div>
+				<ul>
+					<li><a href="#">angular.js</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">javascript</a></li>
+					<li><a href="#">html/css</a></li>
+					<li class="fth"><a href="#">css3</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="project-css3">
+			<div class="price-left-middle" id="hexagon1">
+				<div class="price-left-two"  id="img-icloud">
+					<h5>iCloud</h5>
+					<a href="/angular-iCloud-reminder"> </a>
+				</div>
+				<ul>
+					<li><a href="#">angular.js</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">javascript</a></li>
+					<li><a href="#">html/css</a></li>
+					<li class="fth"><a href="#">css3</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="project-css3">
+			<div class="price-left-middle" id="hexagon1">
+				<div class="price-left-two"  id="img-icloud">
+					<h5>iCloud</h5>
+					<a href="/angular-iCloud-reminder"> </a>
+				</div>
+				<ul>
+					<li><a href="#">angular.js</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">javascript</a></li>
+					<li><a href="#">html/css</a></li>
+					<li class="fth"><a href="#">css3</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="project-css3">
+			<div class="price-left-middle" id="hexagon1">
+				<div class="price-left-two"  id="img-icloud">
+					<h5>iCloud</h5>
+					<a href="/angular-iCloud-reminder"> </a>
+				</div>
+				<ul>
+					<li><a href="#">angular.js</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">javascript</a></li>
+					<li><a href="#">html/css</a></li>
+					<li class="fth"><a href="#">css3</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="project-css3">
+			<div class="price-left-middle" id="hexagon1">
+				<div class="price-left-two"  id="img-icloud">
+					<h5>iCloud</h5>
+					<a href="/angular-iCloud-reminder"> </a>
+				</div>
+				<ul>
+					<li><a href="#">angular.js</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">javascript</a></li>
+					<li><a href="#">html/css</a></li>
+					<li class="fth"><a href="#">css3</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+
+
+
+
 
 
 
@@ -569,11 +629,7 @@
 			    				<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家"></a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank"></a></p>
 			    			</div>
 			    		</div>
-			    		<script type="text/javascript">
-			    		$(document).ready(function() {
-							$().UItoTop({ easingType: 'easeOutQuart' });
-								});
-			    		</script>
+			    		
 			    		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 			    	</div>
 			    	<!--end-footer-->

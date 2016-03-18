@@ -1,0 +1,29 @@
+.accordian{
+	padding:100px 0;
+	max-width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 500px;
+}
+.accordian .project-css3{
+	width: 100px;
+	float: left;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.accordian:hover.project-css3 {width: 100px;}
+.accordian .project-css3:hover {width: 200px;}
+
+@media (max-width:900px){
+	.accordian .project-css3{
+		width: 70px;
+	}
+	.accordian:hover.project-css3 {width: 70px;}
+}
+@media (max-width:640px){
+	.accordian .project-css3{
+		width: 40px;
+	}
+	.accordian:hover.project-css3 {width: 40px;}
+}
