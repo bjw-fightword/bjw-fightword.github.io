@@ -51,6 +51,8 @@
      * k.o.call(this);
      * </code>
      */
+     var WW = document.documentElement.clientWidth;
+     
     k.o = function () {
         var s = this;
 
@@ -668,8 +670,8 @@
                     }
                 );
 
-            this.$c.bind("mousewheel DOMMouseScroll", mw);
-            this.$.bind("mousewheel DOMMouseScroll", mw)
+            //this.$c.bind("mousewheel DOMMouseScroll", mw);鼠标滚动改变value值
+            //this.$.bind("mousewheel DOMMouseScroll", mw)
         };
 
         this.init = function () {
