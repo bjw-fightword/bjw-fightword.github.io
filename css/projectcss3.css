@@ -36,3 +36,17 @@
     height: 250px;
 	}
 }
+@media (max-width:480px){
+	.accordian .project-css3{
+		width: 30px;
+	}
+	.accordian .project-css3:hover {width: 70px;}
+	.accordian:hover.project-css3 {width: 25px;}
+	.accordian {
+    padding: 50px 0;
+    max-width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 250px;
+	}
+}

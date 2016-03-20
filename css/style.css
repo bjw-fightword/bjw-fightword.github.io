@@ -289,16 +289,20 @@ color:#000;
 }
 .header-top h2 {
 	font-size: 1.3em;
-	color: #fff;
+	color: #e1e1e1;
 	letter-spacing: 2px;
 	font-weight: 700;
-	margin: 9% 0px 0px 0px;
+	margin: 3% 0px 0px 0px;
+}
+.header-top h5{
+	color:#e1e1e1;
+	margin-top: 10px;
 }
 .header-top h1 {
 	font-size: 3.2em;
-	color: #fff;
+	color: #e1e1e1;
 	font-weight: 300;
-	margin: 15px 0px 0px 0px;
+	margin: 30px 0px 0px 0px;
 	letter-spacing: 4px;
 }
 .header-top-bottom {
@@ -311,7 +315,7 @@ color:#000;
 }
 .header-left-text {
 	height: 61px;
-	width: 78%;
+	width: 40%;
 	float: right;
 	text-align: left;
 	line-height: 61px;
@@ -323,7 +327,7 @@ color:#000;
 	margin-top: 5%;
 }
 .about{
-	background:url(../images/about-banner.jpg) no-repeat;
+	background: #e1e1e1;
 	background-size:100% 100%;
 	min-height:660px;
 }
@@ -2035,7 +2039,9 @@ ul.callbacks_tabs.callbacks2_tabs {
 	margin-top: 11px;
 }
 .header-left {
+	float: left;
 	width: 65%;
+	margin-left: 20px;
 }
 .header {
 	min-height: 350px;
@@ -2063,7 +2069,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	padding: 1em 0px;
 }
 .about {
-	min-height: 815px;
+	min-height:600px;
 }
 .what-main h3, .blog-main h3, .price-main h3, .quality-main h3, .touch-main h3, .clients-mian h3 {
 	font-size: 2em;
