@@ -325,6 +325,7 @@ color:#000;
 .about-main {
 	text-align:center;
 	margin-top: 5%;
+	padding-bottom: 5%;
 }
 .about{
 	background: #e1e1e1;
@@ -374,12 +375,18 @@ color:#000;
 	padding: 5em 0px;
 	margin-top: 3%;
 }
-.about-main h3 {
-	color: #fff;
-	font-size: 1.8em;
-	letter-spacing: 2px;
-	font-weight: 700;
-	margin: 0;
+.about-left img{
+	transition:all 0.6s cubic-bezier(0,0,0,0);
+}
+
+.about-left img:hover{
+	transform:rotateY(360deg);
+}
+.about-left h5:hover{
+	color: red;
+}
+.about-left h4:hover{
+	color:red;
 }
 /*--end-about--*/
 /*--start-what--*/
@@ -388,7 +395,7 @@ color:#000;
 	padding: 4em 0px 2em 0px;
 }
 .what-main h3,.blog-main h3,.price-main h3,
-.quality-main h3,.touch-main h3,.clients-mian h3{
+.quality-main h3,.touch-main h3,.clients-mian h3,.about-main h3{
 	color: #e22e2e;
 	font-size: 3.2em;
 	font-weight: 900;
@@ -753,9 +760,9 @@ color:#000;
 /*--end-price--*/
 /*--start-footer--*/
 .footer{
-	padding:2em 0px;
 	background:#e22e2e;
 	text-align:center;
+	line-height: 100px;
 }
 .footer-text p {
 	color: #ffffff;
@@ -1526,7 +1533,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	min-height: 1140px;
 }
 .what-main h3, .blog-main h3, .price-main h3, .quality-main h3,
- .touch-main h3, .clients-mian h3 {
+ .touch-main h3, .clients-mian h3,.about-main h3{
 	font-size: 2.55em;
 	background: url(../images/hexa1.png) no-repeat 50% 0px;
 	padding: 30px 0px;
@@ -1767,7 +1774,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	min-height: 445px;
 }
 .about-main h3 {
-	font-size: 1.5em;
+	font-size: 2.5em;
 }
 .about-left img {
 	width: 22%;
@@ -1853,6 +1860,10 @@ ul.callbacks_tabs.callbacks2_tabs {
 #hexagon{
 	width: 92px;
 	height: 131px;
+}
+#hexagon ul li{
+	font-size: 5px;
+	margin: 0;
 }
 #hexagon2,#hexagon1{
 	width: 92px;
@@ -2047,7 +2058,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	min-height: 350px;
 }
 .about-main h3 {
-	font-size: 1.35em;
+	font-size: 2.35em;
 }
 .about-left h4 {
 	font-size: 0.34em;
